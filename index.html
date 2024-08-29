@@ -1,12 +1,93 @@
-<html>
-	<head>
-		<title>Lunar Security</title>
-	</head>
-	<body>
-		<center>
-			<h1>🌙🔐</h1>
-			<p>Good things come to those who wait.</p>
-		</center>
-	</body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunar Security</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body, html {
+            height: 100%;
+            font-family: 'Orbitron', sans-serif;
+            color: #ffffff;
+            overflow: hidden;
+            position: relative;
+            background: #0f0c29; /* Fallback for older browsers */
+        }
+
+        body {
+            background: url('./img/background.gif') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border: 2px solid #ff6ec7;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 110, 199, 0.7);
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 10px #ff6ec7, 0 0 20px #ff6ec7, 0 0 30px #ff6ec7;
+            }
+            to {
+                box-shadow: 0 0 20px #ff6ec7, 0 0 30px #ff6ec7, 0 0 40px #ff6ec7;
+            }
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #ff6ec7;
+            text-shadow: 0 0 10px #ff6ec7, 0 0 20px #ff6ec7, 0 0 30px #ff6ec7;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.5rem;
+            color: #00d4ff;
+            text-shadow: 0 0 5px #00d4ff, 0 0 10px #00d4ff;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            p {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌙🔐</h1>
+        <p>Good things come to those who wait.</p>
+    </div>
+</body>
+</html>
