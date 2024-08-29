@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lunar Security</title>
+    <title>Coming Soon</title>
+    <!-- Google Fonts for Futuristic Font -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
     <style>
+        /* Reset and Base Styles */
         * {
             margin: 0;
             padding: 0;
@@ -18,14 +20,16 @@
             color: #ffffff;
             overflow: hidden;
             position: relative;
-            background: #0f0c29; /* Fallback for older browsers */
+            background: #000000; /* Fallback for older browsers */
         }
 
+        /* GIF Background */
         body {
             background: url('./img/background.gif') no-repeat center center fixed;
             background-size: cover;
         }
 
+        /* Central Content Container */
         .container {
             position: relative;
             z-index: 1;
@@ -36,41 +40,41 @@
             align-items: center;
             text-align: center;
             padding: 20px;
-            background: rgba(0, 0, 0, 0.5);
-            border: 2px solid #ff6ec7;
+            background: rgba(0, 0, 0, 0.4);
+            border: 2px solid #00d4ff;
             border-radius: 15px;
-            box-shadow: 0 0 20px rgba(255, 110, 199, 0.7);
-            animation: glow 2s infinite alternate;
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.7);
         }
 
-        @keyframes glow {
-            from {
-                box-shadow: 0 0 10px #ff6ec7, 0 0 20px #ff6ec7, 0 0 30px #ff6ec7;
-            }
-            to {
-                box-shadow: 0 0 20px #ff6ec7, 0 0 30px #ff6ec7, 0 0 40px #ff6ec7;
-            }
-        }
-
+        /* Heading Style */
         h1 {
-            font-size: 3rem;
-            color: #ff6ec7;
-            text-shadow: 0 0 10px #ff6ec7, 0 0 20px #ff6ec7, 0 0 30px #ff6ec7;
+            font-size: 3.5rem;
+            color: #00d4ff; /* Neon Blue */
+            text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff;
             margin-bottom: 20px;
+            animation: textPulse 6s infinite;
         }
 
+        /* Text Pulse Animation */
+        @keyframes textPulse {
+            0%, 100% { font-size: 3.5rem; }
+            50% { font-size: 4rem; }
+        }
+
+        /* Paragraph Style */
         p {
-            font-size: 1.5rem;
-            color: #00d4ff;
+            font-size: 1.7rem;
+            color: #ffffff;
             text-shadow: 0 0 5px #00d4ff, 0 0 10px #00d4ff;
         }
 
+        /* Responsive Design */
         @media (max-width: 768px) {
             h1 {
                 font-size: 2.5rem;
             }
             p {
-                font-size: 1.2rem;
+                font-size: 1.4rem;
             }
         }
 
@@ -79,12 +83,13 @@
                 font-size: 2rem;
             }
             p {
-                font-size: 1rem;
+                font-size: 1.2rem;
             }
         }
     </style>
 </head>
 <body>
+    <!-- Central Content -->
     <div class="container">
         <h1>🌙🔐</h1>
         <p>Good things come to those who wait.</p>
